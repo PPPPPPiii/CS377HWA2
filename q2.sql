@@ -4,7 +4,7 @@
 
 SET search_path TO dimeDB;
 
-SELECT r."bonica.rid", r.name, r.cycle, r."num.givers" AS numDonors
+SELECT r."bonica.rid", r.name, r.cycle, r."num.givers" AS "numDonors"
 FROM Recipient r
 LEFT JOIN Contributor c
 ON r."bonica.cid" = c."bonica.cid"
